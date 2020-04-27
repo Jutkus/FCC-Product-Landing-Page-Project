@@ -30,6 +30,7 @@ header {
 }
 body {
   background-color: purple;
+  margin: 0;
 }
 .main {
   background: blue;
@@ -52,4 +53,5 @@ body {
   height: 100%;
   /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing*/
   box-sizing: border-box;
+  border: none;
 }
