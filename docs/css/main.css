@@ -28,11 +28,9 @@ header {
   margin-left: 10px;
 }
 body {
-  background-color: purple;
   margin: 0;
 }
 .main {
-  background: blue;
   margin-top: 70px;
   width: 100%;
 }
