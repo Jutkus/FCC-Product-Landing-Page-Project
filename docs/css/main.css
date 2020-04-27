@@ -20,7 +20,7 @@ header {
   font-size: 1.3rem;
 }
 .company-logo > img {
-  display: relative;
+  position: relative;
   width: 80%;
   height: 80%;
   max-width: 300px;
