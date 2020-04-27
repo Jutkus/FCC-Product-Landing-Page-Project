@@ -1,5 +1,4 @@
 header {
-  background-color: gray;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -20,7 +19,6 @@ header {
   font-size: 1.3rem;
 }
 .company-logo > img {
-  position: relative;
   width: 80%;
   height: 80%;
   max-width: 300px;
@@ -28,7 +26,6 @@ header {
   justify-content: center;
   align-items: center;
   margin-left: 10px;
-  z-index: 2;
 }
 body {
   background-color: purple;
