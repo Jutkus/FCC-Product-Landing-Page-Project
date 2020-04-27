@@ -41,6 +41,7 @@ body {
   width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
+  /*Scrollbar is causing video to be slightly to the right*/
 }
 .videos iframe{
   position: absolute;
