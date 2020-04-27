@@ -19,6 +19,9 @@ header {
   width: 35vw;
   font-size: 1.3rem;
 }
+.company-logo {
+  position: relative;
+  z-index: 1;
 .company-logo > img {
   position: relative;
   width: 80%;
