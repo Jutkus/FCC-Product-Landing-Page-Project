@@ -1,17 +1,19 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
 
 <body>
 <header id="header">
   <div class="company-logo">
   <img id="header-img" src="https://usa.yamaha.com/common/images/yamaha_purple.svg" alt="Company Logo"></div>
   </div>
-  <div class="nav"
   <nav id="nav-bar">
+  <div class="nav">
     <ul>
-      <li class="nav-list" href="#videos">Videos</li>
-      <li class="nav-list" href="#about">About</li>
-      <li class="nav-list" href="#quitars">Guitars</li>
+      <li><a class="nav-list" id="nav-link" href="#videos">Videos</a></li>
+      <li><a class="nav-list" id="nav-link" href="#about">About</a></li>
+      <li><a class="nav-list" id="nav-link" href="#guitars">Guitars</a></li>
+    </ul>
   </nav>
   </div>
 </header>
@@ -32,14 +34,54 @@
       </div>
       </div>
     </a>
-    <iframe width="1600" height="900" src="https://www.youtube.com/embed/3RYJ_XvTNXY?loop=1&autoplay=1" allow="autoplay; loop; encrypted-media"></iframe>
+    <iframe width="1600" height="900" src="https://www.youtube.com/embed/3RYJ_XvTNXY?autoplay=1&loop=1&playlist=3RYJ_XvTNXY" allow="autoplay; loop; encrypted-media"></iframe>
     </div>
-    <div class="email-input">
-     <form id="form" action=" https://www.freecodecamp.com/email-submit">
-      <label name="email">If you would like to receive notifications about new products & deals, please input your email below!</label>
-      <input id="email" type="email" name="email" placeholder="example@domain.com">
-      <input id="submit" type="submit" value="Submit">
-     </form>
+    <div id="about" class="about">
+    <div class="about-content">
+      <div class="about-story">
+        <h2>Show Your Other Side</h2>
+        <p>Everything we do is about inspiring guitarists to create something amazing. Your music doesnʼt stand still, so why would we?</p>
+        <a href target="_blank" src="https://usa.yamaha.com/products/contents/guitars_basses/spirit/index.html">Read More</a>
+      </div>
+      <div class="email-input">
+        <form id="form" action=" https://www.freecodecamp.com/email-submit">
+         <label name="email">If you would like to receive notifications about new products & deals, please input your email below!</label>
+         <input class="input-field" id="email" type="email" name="email" placeholder="example@domain.com">
+         <input class="submit" id="submit" type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
      </div>
+    </div>
+    <h1 class="Titles">Choose Your Style</h1>
+    <div id="guitars" class="guitars">
+      <div class="product">
+        <img src="https://usa.yamaha.com/files/lineup-1_12665229488d4cf078e7fcd4b5cf37de.png" />
+        <p>Acoustic Guitar</p>
+        <h2>$300</h2>
+        <button class="Purchase">Purchase</button>
+      </div>
+      <div class="product">
+        <img src="https://usa.yamaha.com/files/lineup-3_aab55aaba94a0cdb3cbe54899879ca7c.png" />
+        <p>Electric Guitar</p>
+        <h2>$500</h2>
+        <button class="Purchase">Purchase</button>
+      </div>
+      <div class="product">
+        <img src="https://usa.yamaha.com/files/lineup-4_a4da0822fac94268b5769a77a13e5b33.png" />
+        <p>Electric Bass</p>
+        <h2>$500</h2>
+        <button class="Purchase">Purchase</button>
+      </div>
+    </div>
   </div>
+    <footer>
+      <ul>
+        <li><a class="footer" href="#">Privacy</a></li>
+        <li><a class="footer" href="#">Terms</a></li>
+        <li><a class="footer" href="#">Conditions</a></li>
+      </ul>
+        <span>Copyright 2020</span>
+    </footer>
 </body>
+
