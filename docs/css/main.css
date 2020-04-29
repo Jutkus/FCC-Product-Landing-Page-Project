@@ -1,5 +1,12 @@
+h1,
+h2,
+p,
+label,
+li {
+  font-family: 'Arimo', sans-serif;
+}
 header {
-  background-color: gray;
+  background-color: rgb(242, 240, 239);
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -19,6 +26,10 @@ header {
   width: 35vw;
   font-size: 1.3rem;
 }
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
 .company-logo > img {
   width: 100%;
   height: auto;
@@ -29,23 +40,24 @@ header {
 }
 body {
   margin: 0;
+  background-color: white;
 }
 .main {
   margin-top: 8em;
   width: 100%;
 }
-.top-info1 {
-}
 .top-info2 {
-  position: relative;
-  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgb(242, 240, 239);
   margin: 0;
   height: 9em;
+  width: 100%;
 }
-.top-info2 > p {
-  position: absolute;
-  right: 0;
-  bottom: 30%;
+.top-info2 > p,
+.top-info1 > h1 {
+  padding: 0 1em 0 1em;
 } 
 .video-design {
   background-color: rgba(224, 226, 219, .8);
@@ -85,3 +97,138 @@ body {
   box-sizing: border-box;
   border: none;
 }
+.about {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/18/Rock_concert_in_black_and_white_%28Unsplash%29.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 300px) {
+.about::after {
+  content: "";
+  display: block;
+  padding-bottom: 60%;
+}
+}
+@media (min-width: 1080px) {
+  .about::after {
+    content: "";
+    display: block;
+    padding-bottom: 40%;
+  }
+  }
+.about-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(51, 51, 51, 0.8);
+  box-shadow: 0 0 0 5px rgb(224, 226, 219);
+  width: 25em;
+  height: 25em;
+}
+.email-input,
+.about-story {
+  text-align: center;
+  color: white;
+  padding-bottom: 2em;
+}
+.about-story > a {
+  display: block;
+  margin: 10px auto;
+  width: 84.5%;
+  text-decoration: none;
+  color: lightblue;
+  padding: 6px 0 6px 0;
+  box-shadow: 0 0 2px 4px lightblue;
+}
+.about-story > a:hover {
+  box-shadow: 0 0 5px 5px lightcyan;
+  color: lightcyan;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+.input-field {
+  width: 90%;
+  height: 40px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  width: 87%;
+  height: 30px;
+  color: lightblue;
+  box-shadow: 0 0 2px 4px lightblue;
+  background-color: transparent;
+}
+.submit:hover{
+  box-shadow: 0 0 5px 5px lightcyan;
+  color: lightcyan;
+}
+.titles {
+  text-align: center;
+  font-size: 4em;
+}
+.guitars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 20px 0;
+  width: 250px;
+  height: 400px;
+  line-height: 0px;
+}
+.purchase {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  width: 87%;
+  height: 30px;
+  color: black;
+  box-shadow: 0 0 2px 2px black;
+  background-color: transparent;
+}
+.purchase:hover{
+  box-shadow: 0 0 5px 5px rgb(2, 25, 155);
+}
+img {
+  width: 100%;
+}
+footer {
+  margin-top: 30px;
+  background-color: rgb(242, 240, 239);
+  padding: 10px;
+}
+footer > span {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+.footer{
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
